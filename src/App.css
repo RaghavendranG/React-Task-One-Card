@@ -1,38 +1,93 @@
+body {
+  background-image: linear-gradient(to right, #0039a6, #00bfff);
+}
+
 .App {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  width: 100vw;
   text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
+  justify-content: space-around;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  margin-top: 60px;
+  place-items: center;
+}
+
+.card {
+  background-color: white;
+  border-radius: 15px;
+  padding: 10px;
+  color: black !important;
+  width: 280px;
+  transition: transform 0.2s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0.5px 0.5px 10px 0.5px rgb(45, 45, 45);
+}
+
+hr {
+  background-color: grey;
+  height: 0.1px;
+}
+
+.title {
+  color: lightslategray;
+  text-transform: uppercase;
+  margin: 0;
+  letter-spacing: 1px;
+}
+
+.priceTag {
+ margin: 0;
+}
+
+.price {
+  font-size: 50px;
+  font-weight: 600;
+}
+
+.period {
+  font-weight: 500;
+}
+
+.content {
+  text-align: left;
+}
+
+.content span {
+  margin: 6px;
+}
+
+.list-active {
+  margin-bottom: 15px;
+  list-style-type: "\2714";
+}
+
+.list-inactive {
+  margin-bottom: 15px;
+  list-style-type: "\1F7AC";
+  color: grey;
+}
+
+.btn {
+  background-color: #1e90ff;
+  opacity: 0.6;
+  text-transform: uppercase;
+  border: none;
+  border-radius: 25px;
+  width: 260px;
+  padding: 20px;
   color: white;
+  font-weight: bold;
+  text-indent: 5px;
+  font-size: smaller;
+  letter-spacing: 1px;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.btn:hover {
+  cursor: pointer;
+  background-color: #0039a6;
+  opacity: 1;
 }
